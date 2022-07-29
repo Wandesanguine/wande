@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+
+h1 {
+    margin: .7rem 0;
+    font-weight: 700;
+    max-width: 250px;
+    font-size: 25px;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+}
+img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+    width: 400px;
+}
+article {
+    background-color: #fff;
+    max-width: 500px;
+    padding: 1.5rem;
+    margin-top: -4px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 400px;
+}
+.p {
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(212, 21%, 14%);
+}
+.secp {
+    margin: 1.2rem 0;
+    line-height: 1.5;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+ul {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+li:nth-child(1) {
+    font-size: 30px;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+li:nth-child(2) {
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+span{
+    padding-left: 10px ;
+    margin: 20px auto;
+    color: #fff;
+}
+button {
+    border: none;
+    margin-top: 20px;
+}
+button img {
+    height: 20px;
+    width: 25px;
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin: 32px;
+    border:1px solid ;
+    background:  hsl(158, 36%, 37%);
+    margin-left: 30%;
+    max-width: 500px;
+    border-radius: .5rem;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.me{
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    img {
+        width: 300px;
+        height: 400px;
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+    article {
+        margin: 0;
+        border-radius: 0 0.5rem 0.5rem 0;
+        height: 400px;
+        width: 300px;
+    
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
